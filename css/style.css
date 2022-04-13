@@ -1,0 +1,1353 @@
+/*폰트*/
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  src: url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf")
+      format("truetype");
+}
+
+.nanumbarungothic * {
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+@font-face {
+  font-family: "S-CoreDream-2ExtraLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  font-family: "nanumbarungothic";
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+
+#header {
+  width: 100%;
+  background-color: #fff;
+}
+.header_inner {
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+#header .logo {
+  float: left;
+  width: 6%;
+  margin-top: 7px;
+  margin-left: 15px;
+}
+.search_bar {
+  float: left;
+  padding: 12px 0 10px 600px;
+
+}
+input {
+  width: 550px;
+  height: 15px;
+  border: 3px solid #e9bcd9;
+  border-radius: 50px;
+  padding: 25px 55px;
+  background: url(../images/search_icon.png) no-repeat 15px 50%;
+  background-size: 5%;
+}
+input:focus {outline:none;}
+.login {
+  /* float: left;
+  padding-top: 23px;
+  padding-left: 410px; */
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+
+.login img {
+  float: left;
+  width: 30px;
+}
+
+.login_inner {
+  float: left;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+.login_inner a {
+  font-family: "S-CoreDream-3Light";
+  font-size: 15px;
+  color: #000;
+}
+
+/*---------------------------sub_menu-----------------------*/
+#aside {
+  width: 8%;
+  height: 1000px;
+  position: relative;
+  position: fixed;
+  top: 77px;
+  background-color: #2f1942;
+  z-index: 1;
+}
+.nav {
+  position: absolute;
+  right: 0;
+}
+.nav ul {
+  width: 140px;
+  height: 700px;
+  margin-top: 40px;
+}
+.nav ul li {
+  height: 90px;
+}
+.nav .sub_info a {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 0px 10px 60px;
+}
+.nav li:nth-child(n + 2) a {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 0px 10px 50px;
+  margin-left: 10px;
+}
+.nav .sub_info a {
+  background: url(../images/Logo.png) no-repeat 0 50%;
+  background-size: 50px;
+}
+.nav .sub_music4u a {
+  background: url(../images/sub_music4u-icon.png) no-repeat 0 50%;
+  background-size: 25px;
+}
+.nav .sub_thema a {
+  background: url(../images/sub_thema-icon.png) no-repeat 0 50%;
+  background-size: 25px;
+}
+.nav .sub_new a {
+  background: url(../images/sub_new-music.png) no-repeat 0 50%;
+  background-size: 25px;
+}
+.nav .sub_ticket a {
+  background: url(../images/sub_ticket-icon.png) no-repeat 0 50%;
+  background-size: 25px;
+}
+.nav .sub_event a {
+  background: url(../images/sub_event-icon.png) no-repeat 0 40%;
+  background-size: 25px;
+}
+.nav .sub_gift a {
+  background: url(../images/sub_gift-icon.png) no-repeat 0 50%;
+  background-size: 25px;
+}
+.nav .sub_download a {
+  background: url(../images/sub_download-icon.png) no-repeat 0 40%;
+  background-size: 25px;
+}
+/*---------------------------banner--------------------------*/
+.main {
+  margin-top: 65px;
+}
+#section_banner {
+  background: url(../images/banner_bg-new2.png) no-repeat top;
+  height: 953px;
+  margin-top: 77px;
+  margin-right: 0;
+  margin-left: 8%;
+  z-index: -1;
+}
+.banner_title h1 {
+  font-family: "S-CoreDream-2ExtraLight";
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+  float: left;
+  margin-top: 130px;
+  margin-left: 90px;
+}
+.banner_title h2 {
+  font-family: S-CoreDream-4Regular;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 500;
+  float: left;
+  margin-top: 125px;
+  margin-left: 10px;
+}
+.banner_title::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+.banner_inner {
+  margin-left: 30px;
+}
+.today_music {
+  position: absolute;
+  top: 47%;
+  left: 13%;
+}
+.today_list{
+  float: left;
+  margin-right: 87px;
+}
+.today_music div .album{
+  border-radius: 15px;
+}
+.today_music span {
+  position: absolute;
+  margin-top: 115px;
+  margin-left: 115px;
+  display: none;
+}
+.today_music span img{
+  width: 25px;
+}
+.list_name{
+  margin-top: 20px;
+  display: none;
+}
+.today_music li {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.today_music .singer {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+.today_list div:hover .list_name{
+  display: block;
+}
+.today_list div:hover span{
+  display: block;
+}
+
+/*-------------------------Brand_idebtity-----------------------*/
+#section_id {
+  background: linear-gradient(#c875b1, #ab7cbf);
+  height: 550px;
+  z-index: -1;
+}
+.id_inner{
+  position: relative;
+}
+/* .id_title{
+  position: absolute;
+  left: 25%;
+  top: 15px;
+}
+.id_title img{
+  width: 200px;
+} id제목겸 로고 또 박으로 햤는데 안 어울려서 보류*/
+
+.id_content01, .id_content02, .id_content03 {
+  background-color: #d398c6;
+  box-shadow: 5px 5px 10px rgba(105, 0, 100, 0.5);
+  width: 310px;
+  height: 300px;
+  border-radius: 15px;
+  margin-right: 140px;
+  margin-top: 100px;
+  float: left;
+}
+.id_content01{
+  margin-left: 420px;
+}
+.id_content01 img, .id_content02 img {
+  margin-left: 55px;
+  margin-top: 40px;
+}
+.id_content03 img{
+  margin-left: 70px;
+  margin-top: 20px;
+  width: 180px;
+}
+.id_content01 p, .id_content02 p, .id_content03 p {
+  text-align: center;
+  float: left;
+  font-size: 17px;
+  line-height: 26px;
+  display: block;
+}
+.id_content01 p{
+  margin-left: 60px;
+  margin-top: 10px
+}
+.id_content02 p{
+  margin-left: 45px;
+  margin-top: 12px
+}
+.id_content03 p{
+  margin-left: 55px;
+  margin-top: 5px
+}
+.id_content03 p{
+  top: 65%;
+  left: 71.5%;
+}
+/* .id_icon {
+  margin-right: 10px;
+}
+.id_element .id_text {
+  padding-top: 55px;
+  display: block;
+  float: right;
+} */
+
+/*section_music4u*/
+#section_new_album {
+  height: 700px;
+  z-index: -1;
+}
+.new_album_inner {
+  position: relative;
+  height: 700px;
+}
+.new_album_title {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.new_album_element01,
+.new_album_element02,
+.new_album_element03,
+.new_album_element04 {
+  position: absolute;
+}
+.new_album_element01 {
+  top: 25%;
+  left: 25%;
+}
+.new_album_element02 {
+  top: 60%;
+  left: 25%;
+}
+.new_album_element03 {
+  top: 25%;
+  right: 17%;
+}
+.new_album_element04 {
+  top: 60%;
+  right: 17%;
+}
+.new_album_content {
+  background: linear-gradient(to right, #ba93cb, #fff6f9);
+  width: 530px;
+  border-radius: 15px;
+}
+.new_album_content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.new_album_content img {
+  margin: 30px 20px 30px 20px;
+  float: left;
+  width: 140px;
+}
+.new_album_text01 {
+  font-family: "NanumBarunGothic";
+  font-size: 17px;
+  font-weight: 400;
+  padding-top: 70px;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.new_album_text02 {
+  color: rgb(80, 80, 80);
+  font-family: "NanumBarunGothic";
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+}
+.more {
+  width: 10px;
+  height: 70px;
+  position: absolute;
+  top: 30%;
+  right: 7%;
+}
+.more a {
+  color: #a864a8;
+  opacity: 70%;
+  font-size: 40px;
+}
+
+/*section_tag*/
+.tag_inner {
+  position: relative;
+  height: 350px;
+}
+.tag_title {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.tag_element01 {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+}
+.tag_element02 {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+}
+.tag_content {
+  float: left;
+  margin-right: 10px;
+}
+.tag_content a {
+  border: 1px solid #b7b3b3;
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: #000;
+  background-color: #fff;
+  font-family: "NanumBarunGothic";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*section_thema*/
+#section_thema {
+  height: 350px;
+  z-index: -1;
+}
+.thema_inner {
+  position: relative;
+  height: 350px;
+}
+.thema_title {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.thema_element01,
+.thema_element02,
+.thema_element03 {
+  position: absolute;
+}
+.thema_element01 {
+  top: 25%;
+  left: 25%;
+}
+.thema_element02 {
+  top: 25%;
+  left: 45%;
+}
+.thema_element03 {
+  top: 25%;
+  left: 65%;
+}
+.thema_content {
+  background: linear-gradient(to right, #de6581, #f6c3b6);
+  width: 340px;
+  height: 140px;
+  border-radius: 15px;
+}
+.thema_content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.thema_content img {
+  width: 100px;
+  margin: 20px 20px 30px 20px;
+  float: left;
+}
+.thema_text01 {
+  font-size: 15px;
+  padding-top: 45px;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.thema_text02 {
+  color: rgb(80, 80, 80);
+  font-size: 13px;
+  display: block;
+}
+.thema_inner .more_s {
+  width: 5px;
+  height: 50px;
+  position: absolute;
+  top: 22%;
+  right: 8%;
+  font-size: 30px;
+}
+.thema_inner .more_s a {
+  color: #ffffff;
+  opacity: 70%;
+}
+
+/*tab_new music*/
+#section_tab_music {
+  height: 100px;
+  z-index: -1;
+}
+.tab {
+  position: relative;
+  height: 450px;
+}
+#section_tab_music .tab_title {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.tabnav01 {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+.tabnav01 li {
+  float: left;
+}
+.tabnav01 li a {
+  padding: 5px 15px;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 20px;
+  color: #000;
+  margin-right: 20px;
+}
+.tabnav01 li a:hover,
+.tabnav01 li a.active {
+  border-bottom: 3px solid #ec008c;
+}
+
+/*tab_new music inner*/
+.tabcontent01 {
+  height: 350px;
+  z-index: -1;
+}
+#tab01,
+#tab02 {
+  width: 1000px;
+  height: 450px;
+  padding-top: 60px;
+}
+.tab_box {
+  width: 145px;
+  text-align: left;
+  position: absolute;
+  left: 25%;
+}
+.tab_box:nth-child(2) {
+  left: 37%;
+}
+.tab_box:nth-child(3) {
+  left: 49%;
+}
+.tab_box:nth-child(4) {
+  left: 61%;
+}
+.tab_box:nth-child(5) {
+  left: 73%;
+}
+#tab01 .tabimg,
+#tab02 .tabimg {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 180px;
+}
+
+.tabcontent01 span {
+  position: absolute;
+  margin-top: 140px;
+  margin-left: 140px;
+  display: none;
+}
+.tabcontent01 span img {
+  width: 25px;
+}
+.tab_box:hover span {
+  display: block;
+}
+#tab01 ul,
+#tab02 ul {
+  color: rgb(80, 80, 80);
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+}
+#tab01 .play_title,
+#tab02 .play_title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #000;
+}
+.tab_box li:nth-child(2) {
+  font-size: 13px;
+}
+
+/*section_ticket*/
+#section_ticket {
+  height: 100px;
+  z-index: -1;
+}
+.tab_ticket {
+  position: relative;
+  height: 450px;
+}
+.tab_ticket {
+  position: relative;
+  height: 450px;
+}
+.tab_title {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.tabnav02 {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+.tabnav02 li {
+  float: left;
+}
+.tabnav02 li a {
+  padding: 5px 15px;
+  margin-right: 20px;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 20px;
+  color: #000;
+}
+.tabnav02 li a:hover,
+.tabnav02 li a.active {
+  border-bottom: 3px solid #ec008c;
+}
+/*tab_ticket inner*/
+.tabcontent02 {
+  z-index: -1;
+}
+#tab03 {
+  width: 100%;
+  height: 1300px;
+}
+#tab04 {
+  width: 100%;
+  height: 1600px;
+}
+#tab03 .ticket_banner {
+  width: 100%;
+  height: 220px;
+  background: url(../images/ticket_banner01.png) no-repeat 65% #f26d7d;
+  background-size: 25%;
+  background-position-y: 100%;
+}
+#tab04 .ticket_banner {
+  width: 100%;
+  height: 220px;
+  background: url(../images/ticket_banner02.png) no-repeat 67% #9c55a0;
+  background-size: 26%;
+}
+#tab03 .ticket_b_title{
+  display: block;
+  padding: 50px 1050px 0 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: right;
+  color: #fff;
+  font-family: "S-CoreDream-3Light";
+}
+#tab04 .ticket_b_title {
+  display: block;
+  padding: 70px 1005px 0 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: right;
+  color: #fff;
+  font-family: "S-CoreDream-3Light";
+}
+.ticket2_01 .ticket_s_title01,
+.ticket2_02 .ticket_s_title02 {
+  display: block;
+  margin-left: 630px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.t_guide_01{
+  position: absolute;
+  display: block;
+  top: 335%;
+}
+.t_guide_02{
+  position: absolute;
+  display: block;
+  top: 110%;
+}
+.t_guide_title{
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.t_guide_01 p, .t_guide_02 p{
+  font-weight: 300;
+}
+.ticket_box1_01{
+  /*바탕 박스1*/
+  width: 870px;
+  height: 230px;
+  background-color: #fff;
+  border: 3px solid #8560a8;
+  border-radius: 25px;
+  left: 32%;
+  position: relative;
+  margin-top: 30px;
+} /*바탕 박스1*/
+.ticket_box1_02{
+  width: 870px;
+  height: 230px;
+  background-color: #fff;
+  border: 3px solid #8560a8;
+  border-radius: 25px;
+  right: 0.3%;
+  position: relative;
+  margin-top: 250px;
+}
+.ticket_box1_03{
+  width: 870px;
+  height: 230px;
+  background-color: #fff;
+  border: 3px solid #8560a8;
+  border-radius: 25px;
+  right: 0.3%;
+  position: relative;
+  margin-top: 20px;
+}
+.ticket_box2_01,
+.ticket_box2_02 {
+  /*바탕 박스2*/
+  width: 870px;
+  height: 210px;
+  background-color: #fff;
+  border: 3px solid #8560a8;
+  border-radius: 25px;
+  left: 32%;
+  position: relative;
+} /*바탕 박스2*/
+.ticket_box2_03,
+.ticket_box2_04 {
+  /*바탕 박스2*/
+  width: 870px;
+  height: 210px;
+  background-color: #fff;
+  border: 3px solid #8560a8;
+  border-radius: 25px;
+  position: relative;
+  top: 110%;
+} /*바탕 박스2*/
+
+/*-------------------------티켓 추천탭 ---------------------------*/
+.ticket_box1_01{
+  background: url(../images/ticket_bg01.png) no-repeat;
+  background-position: 45%;
+  background-size: 33%;
+  background-position-y: 20px;
+}
+.ticket_box1_02{
+  background: url(../images/ticket_bg02.png) no-repeat;
+  background-position: 50%;
+  background-size: 55%;
+  background-position-y: 10px;
+}
+.ticket_box1_03{
+  background: url(../images/ticket_bg03.png) no-repeat;
+  background-position: 45%;
+  background-size: 35%;
+}
+.t_box1_1{
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.t_title_01{
+  font-size: 23px;
+  font-weight: 400;
+}
+.t_title_02{
+  font-size: 17px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.ticket_box1_02 .t_title_02{
+  padding: 10px 0 10px;
+}
+.t_title_button{
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.t_title_button a{
+  padding: 5px 10px;
+  border: 1px solid #8560a8;
+}
+.t_title_button a:hover{
+  background-color: #8560a8;
+  color: #fff;
+}
+.t_box1_r{
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.t_pri_01 li, .t_pri_02 li, .t_pri_03_1 li, .t_pri_03_2 li, .t_pri_03_3 li{
+  margin-bottom: 30px;
+}
+.t_pri_01 {
+  font-size: 17px;
+  font-weight: 300;
+  text-align: right;
+  float: left;
+  margin-right: 30px;
+}
+.t_pri_02 {
+  font-size: 17px;
+  font-weight: 300;
+  text-align: right;
+  float: left;
+  margin-right: 10px;
+  text-decoration: line-through;
+}
+.ticket_box1_03 .t_pri_02{
+  font-size: 17px;
+  font-weight: 300;
+  text-align: right;
+  float: left;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.ticket_box1_03 .t_pri_02 li:nth-child(3){
+  text-decoration: line-through;
+}
+.t_pri_03_1 {
+  text-align: right;
+  float: left;
+  font-size: 23px;
+  font-weight: 400;
+  color: #146cd9;
+}
+.t_pri_03_2{
+  text-align: right;
+  float: left;
+  font-size: 23px;
+  font-weight: 400;
+  color: #ff30fd;
+}
+.t_pri_03_3{
+  text-align: right;
+  float: left;
+  font-size: 23px;
+  font-weight: 400;
+}
+.t_pri_03_3 li:nth-child(3){
+  color: #078eb0;
+}
+.t_pri_03_1::after{
+  clear: left;
+  display: block;
+  content: '';
+}
+
+/*----------------티켓_일반탭 -----------------*/
+.ticket_name {
+  /*박스 제목*/
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+.t_name_01 {
+  font-size: 23px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.t_name_02 {
+  font-size: 17px;
+  font-weight: 400;
+} /*박스 제목*/
+
+/*자동결제 가격*/
+.ticket_grp_01 {
+  position: absolute;
+  top: 13%;
+  left: 42%;
+  font-size: 16px;
+}
+.ticket_box2_04 .ticket_grp_01 {
+  top: 23%;
+}
+.ticket_grp_01 li,
+.ticket_grp_02 li,
+.ticket_grp_03 li {
+  float: left;
+}
+.t01_pri_title {
+  background: url(../images/ticket_icon01.png) no-repeat;
+  background-size: 30px;
+  padding-left: 35px;
+}
+.ticket2_01 .t01_price {
+  margin-left: 165px;
+}
+.ticket2_02 .t01_price {
+  margin-left: 178px;
+}
+.ticket_box2_04 .t01_price {
+  margin-left: 165px;
+}
+.t01_price span {
+  font-size: 25px;
+}
+.t01_pri_button {
+  margin-left: 20px;
+}
+.t01_pri_button a {
+  padding: 10px 10px;
+  color: #fff;
+  background-color: #1e1111;
+}
+.t01_pri_button span {
+  color: #ee0000;
+}
+
+/*페이코 가격*/
+.ticket_grp_02 {
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  font-size: 16px;
+}
+.t02_pri_title {
+  background: url(../images/ticket_icon02-2.png) no-repeat;
+  background-size: 60px;
+  background-position: 0 4px;
+  padding-left: 64px;
+  padding-top: 2px;
+  color: #ee0000;
+}
+.ticket2_01 .t02_price {
+  color: #ee0000;
+  margin-left: 57px;
+}
+.ticket2_02 .t02_price {
+  color: #ee0000;
+  margin-left: 57px;
+}
+.t02_price span {
+  font-size: 25px;
+}
+
+/*30일 가격*/
+.ticket_grp_03 {
+  position: absolute;
+  top: 62%;
+  left: 42%;
+  font-size: 16px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+.ticket_box2_04 .ticket_grp_03 {
+  top: 48%;
+  padding-top: 25px;
+}
+.t03_pri_title {
+  background: url(../images/ticket_icon03.png) no-repeat;
+  background-size: 25px;
+  padding-left: 30px;
+}
+.ticket2_01 .t03_price {
+  margin-left: 196px;
+}
+.ticket2_02 .t03_price {
+  margin-left: 210px;
+}
+.ticket_box2_04 .t03_price {
+  margin-left: 196px;
+}
+.t03_price span {
+  font-size: 25px;
+}
+.ticket_grp_03::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+/*구매,선물 버튼*/
+.ticket2_01 .ticket_grp_04 {
+  position: absolute;
+  top: 70%;
+  left: 85%;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.ticket2_02 .ticket_grp_04 {
+  position: absolute;
+  top: 70%;
+  left: 85%;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.ticket_box2_04 .ticket_grp_04 {
+  top: 58%;
+}
+.ticket_grp_04 li {
+  float: left;
+}
+.ticket_grp_04 a {
+  padding: 7px 8px;
+  border: 1px solid #ccc;
+}
+.ticket_grp_04 a:hover {
+  background-color: #ccc;
+}
+
+/*--------------------------------------이벤트---------------------*/
+#section_event{
+  height: 600px;
+  z-index: -1;
+}
+.event_inner{
+  position: relative;
+}
+.event_title{
+  position: absolute;
+  left: 25%;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+}
+.event_inner ul{
+  position: absolute;
+  left: 24%;
+  margin-top: 20px;
+}
+.event_inner li{
+  float: left;
+  margin-top: 70px;
+  margin-left: 20px;
+  margin-right: 70px;
+}
+
+/*-------------------------------굿즈탭--------------------------*/
+#section_gift{
+  height: 500px;
+  z-index: -1;
+}
+.gift_inner{
+  position: relative;
+}
+.gift_title{
+  position: absolute;
+  left: 25%;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+}
+.gift_phone{
+  position: absolute;
+  left: 25%;
+  margin-top: 100px;
+}
+.gift_airpod{
+  position: absolute;
+  left: 57%;
+  margin-top: 100px;
+}
+.gift_inner img{
+  display: block;
+  width: 255px;
+  z-index: 2;
+  position: absolute;
+}
+.gift_bg{
+  position: absolute;
+  margin-left: 140px;
+  background-color: #f3eff6;
+  width: 330px;
+  height: 180px;
+  border-radius: 10px;
+}
+.gift_name{
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 270px;
+  padding-top: 90px;
+  padding-bottom: 10px;
+}
+.gift_text{
+  font-size: 15px;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.gift_button{
+  font-size: 15px;
+  margin-left: 130px;
+  margin-top: 25px;
+}
+.gift_button a{
+  padding: 10px;
+  border: 1px solid #c28bc2;
+  border-radius: 5px;
+  color: #8560a8;
+}
+.gift_button a:hover{
+  background-color: #c28bc2;
+  color: #fff;
+}
+
+/*------------------------------다운로드------------------------*/
+#section_download{
+  height: 500px;
+  z-index: -1;
+}
+.download_inner{
+  position: relative;
+}
+.down_title{
+  position: absolute;
+  left: 25%;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+}
+.down_text{
+  position: absolute;
+  left: 43%;
+  font-family: "S-CoreDream-3";
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+}
+.down{
+  position: absolute;
+  left: 30%;
+  top: 150px;
+}
+.down_img img{
+  width: 190px;
+}
+.down_img li{
+  float: left;
+  margin-right: 168px;
+}
+.down_name li:nth-child(1){
+  float: left;
+  margin-top: 30px;
+  margin-left: 33px;
+  margin-right: 260px;  
+}
+.down_name li:nth-child(2){
+  float: left;
+  margin-top: 30px;
+  margin-right: 267px;  
+}
+.down_name li:nth-child(3){
+  float: left;
+  margin-top: 30px;  
+}
+.down_name li a{
+  border: 1px solid #c28bc2;
+  border-radius: 10px;
+  color: #8560a8;
+  font-size: 20px;
+  font-weight: 300;
+}
+.down_b_01{
+  background: url(../images/download-icon.png) no-repeat;
+  padding: 10px 40px 10px 10px;
+  background-size: 18px;
+  background-position-x: 90%;
+  background-position-y: 40%;
+}
+.down_b_02{
+  background: url(../images/download-icon.png) no-repeat;
+  padding: 10px 35px 10px 10px;
+  background-size: 18px;
+  background-position-x: 90%;
+  background-position-y: 40%;
+}
+.down_b_03{
+  background: url(../images/download-icon.png) no-repeat;
+  padding: 10px 35px 10px 10px;
+  background-size: 18px;
+  background-position-x: 90%;
+  background-position-y: 40%;
+}
+.down_name li a:hover{
+  border: 1px solid #000;
+  /* background-color: #6e3b6e; */
+  color: #000;
+}
+
+/*-----------------------------------footer------------------------------*/
+.main_footer{
+  height: 180px;
+  background-color: #bd8cbf;
+  z-index: -1;
+}
+.footer_inner{
+  position: relative;
+}
+
+.footer_logo{
+  position: absolute;
+  top: 15px;
+  left: 20%;
+  width: 200px;
+}
+.footer_menu{
+  position: absolute;
+  left: 40%;
+}
+.footer_menu li{
+  float: left;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+.footer_menu li a{
+  font-size: 17px;
+  color: rgb(53, 53, 53);
+}
+.footer_tel{
+  position: absolute;
+  top: 30px;
+  right: 10%;
+}
+.tel_01{
+  font-size: 17px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  color: #2f2f2f;
+}
+.tel_02{
+  font-size: 35px;
+  color: #3a3a3a;
+}
+.footer_sns{
+  margin-top: 10px;
+  margin-left: 72px;
+}
+.footer_sns li{
+  float: left;
+  margin-right: 10px;
+}
+.footer_sns li img{
+  width: 30px;
+}
+.footer_text{
+  color: rgb(53, 53, 53);
+  position: absolute;
+  top: 70px;
+  left: 40%;
+}
+.footer_text li{
+  text-align: center;
+}
